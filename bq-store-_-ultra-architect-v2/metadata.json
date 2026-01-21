@@ -1,0 +1,7 @@
+{
+  "name": "bq store | Ultra Architect AI",
+  "description": "Professional Grade FiveM Script Generation with Discord integration and premium UI.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
