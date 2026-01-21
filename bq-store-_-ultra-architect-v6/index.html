@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bq store | Elite Royal Architect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --primary: #3b82f6;
+        --secondary: #6366f1;
+        --accent: #f59e0b;
+        --bg-dark: #020617;
+      }
+      body {
+        font-family: 'IBM Plex Sans Arabic', 'Plus Jakarta Sans', sans-serif;
+        background-color: var(--bg-dark);
+        color: #f8fafc;
+        overflow-x: hidden;
+      }
+      
+      /* Luxury Scrollbar */
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: #020617; }
+      ::-webkit-scrollbar-thumb { 
+        background: linear-gradient(to bottom, #1e293b, #3b82f6); 
+        border-radius: 10px;
+        border: 2px solid #020617;
+      }
+      
+      .glass-card {
+        background: rgba(15, 23, 42, 0.6);
+        backdrop-filter: blur(40px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.8);
+      }
+      
+      .gold-text {
+        background: linear-gradient(135deg, #fbbf24 0%, #d97706 50%, #fbbf24 100%);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: goldShimmer 3s linear infinite;
+      }
+
+      @keyframes goldShimmer {
+        to { background-position: 200% center; }
+      }
+
+      .luxury-transition {
+        transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+      .float-animation {
+        animation: float 6s ease-in-out infinite;
+      }
+
+      ::selection {
+        background: #3b82f6;
+        color: white;
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@^19.2.3",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+        "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+        "jszip": "https://esm.sh/jszip@^3.10.1"
+      }
+    }
+    </script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
