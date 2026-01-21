@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bq store | Elite FiveM Architect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --primary: #3b82f6;
+        --secondary: #6366f1;
+        --accent: #f59e0b;
+        --bg-dark: #020617;
+      }
+      body {
+        font-family: 'IBM Plex Sans Arabic', 'Plus Jakarta Sans', sans-serif;
+        background-color: var(--bg-dark);
+        color: #f8fafc;
+        overflow-x: hidden;
+      }
+      /* Premium Scrollbar */
+      ::-webkit-scrollbar { width: 5px; }
+      ::-webkit-scrollbar-track { background: #020617; }
+      ::-webkit-scrollbar-thumb { background: linear-gradient(to bottom, #1e293b, #3b82f6); border-radius: 20px; }
+      
+      .glass-card {
+        background: rgba(15, 23, 42, 0.4);
+        backdrop-filter: blur(24px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      }
+      
+      .elite-border {
+        position: relative;
+        border: 1px solid transparent;
+        background: linear-gradient(var(--bg-dark), var(--bg-dark)) padding-box,
+                    linear-gradient(135deg, #3b82f6, #f59e0b) border-box;
+      }
+
+      .gold-text {
+        background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .neon-glow {
+        box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+      }
+      
+      @keyframes shimmer {
+        0% { background-position: -200% 0; }
+        100% { background-position: 200% 0; }
+      }
+      .animate-shimmer {
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+        background-size: 200% 100%;
+        animation: shimmer 3s infinite;
+      }
+
+      .luxury-transition {
+        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@^19.2.3",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+        "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+        "jszip": "https://esm.sh/jszip@^3.10.1"
+      }
+    }
+    </script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
